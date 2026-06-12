@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bani Vig | Aesthetic Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Poppins,sans-serif;
+background:linear-gradient(-45deg,#0f172a,#312e81,#581c87,#111827);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+color:white;
+}
+@keyframes bg{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+nav{
+position:fixed;width:100%;padding:18px 8%;
+display:flex;justify-content:space-between;
+backdrop-filter:blur(15px);
+background:rgba(0,0,0,.2);
+}
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+.hero h1{
+font-size:5rem;
+background:linear-gradient(90deg,#f9a8d4,#c084fc,#60a5fa);
+-webkit-background-clip:text;
+color:transparent;
+}
+.hero p{max-width:700px;color:#ddd;margin:20px}
+.btn{
+display:inline-block;
+padding:14px 28px;
+border-radius:30px;
+background:linear-gradient(90deg,#ec4899,#8b5cf6);
+color:white;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 25px rgba(236,72,153,.5);
+}
+section{padding:90px 10%}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+.card{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,.15);
+padding:25px;
+border-radius:25px;
+transition:.4s;
+}
+.card:hover{
+transform:translateY(-12px) scale(1.03);
+}
+h2{margin-bottom:25px}
+footer{text-align:center;padding:30px;color:#ccc}
+</style>
+</head>
+<body>
+
+<nav>
+<h3>✨ Bani Vig</h3>
+</nav>
+
+<div class="hero">
+<h1>Bani Vig</h1>
+<p>Aspiring Software Developer • Java Enthusiast • Spring Boot Learner • DSA Problem Solver</p>
+<a href="#about" class="btn">Explore My Portfolio</a>
+</div>
+
+<section id="about">
+<h2>💜 About Me</h2>
+<div class="card">
+I am Bani Vig, a passionate tech enthusiast who loves solving coding problems, learning Java, Spring Boot and building modern applications. I enjoy turning ideas into beautiful and functional projects.
+</div>
+</section>
+
+<section>
+<h2>🚀 Skills</h2>
+<div class="grid">
+<div class="card">☕ Java</div>
+<div class="card">🍃 Spring Boot</div>
+<div class="card">💻 DSA</div>
+<div class="card">🌐 HTML/CSS</div>
+<div class="card">⚡ JavaScript</div>
+<div class="card">🗄️ MySQL</div>
+</div>
+</section>
+
+<section>
+<h2>🌟 Achievements</h2>
+<div class="grid">
+<div class="card"><h1>500+</h1><p>Problems Solved</p></div>
+<div class="card"><h1>10+</h1><p>Projects</p></div>
+<div class="card"><h1>100%</h1><p>Learning Mindset</p></div>
+</div>
+</section>
+
+<section>
+<h2>📂 Projects</h2>
+<div class="grid">
+<div class="card"><h3>Portfolio Website</h3><p>Personal responsive portfolio.</p></div>
+<div class="card"><h3>Student Management System</h3><p>Java based application.</p></div>
+<div class="card"><h3>Spring Boot Project</h3><p>Backend API development.</p></div>
+</div>
+</section>
+
+<section>
+<h2>📞 Contact</h2>
+<div class="card">
+<p>📧 your-email@example.com</p>
+<p>💻 GitHub: Add your profile</p>
+<p>💼 LinkedIn: Add your profile</p>
+</div>
+</section>
+
+<footer>Made with 💜 by Bani Vig</footer>
+
+</body>
+</html>
